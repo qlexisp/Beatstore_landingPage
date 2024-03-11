@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptheplug portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="bg-black w-full fixed z-50">
+        <div class="flex py-4 justify-center items-center mx-36 "> <!-- conteneur du header -->
+
+            <div class="text-white uppercase w-1/6"> <!-- div du logo -->
+                <h1 class="text-xl font-bold">Aptheplugg</h1>
+            </div>
+
+            <nav class="w-4/6"> <!-- div de la navbar -->
+                <ul class="text-white flex font-bold">
+                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="#Home">Home</a>
+                    </li>
+                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="#Beats">Beats</a>
+                    </li>
+                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="">Prices</a></li>
+                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="">About me</a>
+                    </li>
+                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="w-1/6 text-right font-bold"> <!-- div du sign up / login -->
+                <button
+                    class="text-white mr-10 bg-emerald-600 rounded-lg px-4 py-2 hover:bg-emerald-500 ease-in duration-200"><a
+                        href="#login">Sign Up</a></button>
+                <button class="text-neutral-400 hover:text-white ease-in duration-200"><a href="#login">Log
+                        In</a></button>
+            </div>
+        </div>
+    </header>
+    <div class="bg-black w-full">
+        <div class="flex z-40" id="Home"> <!-- conteneur du hero -->
+            <video autoplay loop muted plays-inline class="absolute top-0 left-0 w-full h-full object-cover"
+                id="heroVideo"
+                style="left: 5%; transform: translateX(15%);">
+                <source src="img/hero.mp4" type="video/mp4">
+            </video>
+            <div class="w-full h-screen p-40 z-10"> <!-- côté droit -->
+                <p class="text-[60px] font-bold text-white uppercase mb-2 text-">Get Your Sound <br> To The Next Level</p>
+                <p class="text-md text-white mb-8 w-2/3">Explore endless possibilities and craft your sonic signature with our cutting-edge beatmaking tools.
+                </p>
+                <div class="flex w-1/2"> <!-- conteneur des boutons du hero -->
+                    <button
+                        class="w-1/2 text-white font-bold mr-10 bg-blue-400 rounded-lg px-4 py-2 hover:scale-110 bg-blue-300 ease-in duration-300"><a
+                            href="">Explore Sounds</a></button>
+                    <button
+                        class="w-1/2 text-white font-bold mr-10 border-solid border-2 border-white px-2 py-2 rounded-lg px-4 py-2 hover:scale-110 ease-in duration-300"><a
+                            href="">About Me</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black py-4"></div> <!-- séparateur -->
+
+    <div class="flex" id="Beats"> <!-- conteneur du hero -->
+        <div class="w-1/2 bg-blue-500 p-28"> <!-- côté droit -->
+            <p class="text-[60px] font-bold text-white uppercase mb-2">Get Your Sound <br> To The Next Level</p>
+            <p class="text-md text-white mb-8">Unleash the Rhythm Within: Elevate Your Beats, Ignite Your Sound.
+                Explore endless possibilities and craft your sonic signature with our cutting-edge beatmaking tools.
+            </p>
+            <div class="flex"> <!-- conteneur des boutons du hero -->
+                <button
+                    class="w-1/2 text-white font-bold mr-10 bg-blue-400 rounded-lg px-4 py-2 hover:scale-110 bg-blue-300 ease-in duration-300"><a
+                        href="">Explore Sounds</a></button>
+                <button
+                    class="w-1/2 text-white font-bold mr-10 border-solid border-2 border-white px-2 py-2 rounded-lg px-4 py-2 hover:scale-110 ease-in duration-300"><a
+                        href="">About Me</a></button>
+            </div>
+        </div>
+
+        <div class="w-1/2 bg-blue-600 bg-scroll bg-cover" style="background-image: url('img/hero.jpg')">
+            <!-- côté gauche -->
+        </div>
+    </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
