@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aptheplug portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="overflow-x-hidden">
@@ -49,12 +53,14 @@
                 <div class="w-full h-screen p-40 z-10"> <!-- côté droit -->
                     <p class="text-[60px] font-bold text-white uppercase mb-2 text-">Get Your Sound <br> To The Next
                         Level</p>
-                    <p class="text-md text-white mb-8 w-2/3">Explore endless possibilities and craft your sonic
+                    <p class="text-md text-white mb-8 w-2/3 text-neutral-400 font-['Raleway']">Explore endless
+                        possibilities and craft
+                        your sonic
                         signature with our cutting-edge beatmaking tools.
                     </p>
                     <div class="flex w-1/2"> <!-- conteneur des boutons du hero -->
                         <button
-                            class="w-1/2 text-white font-bold mr-10 bg-blue-400 rounded-lg px-4 py-2 hover:scale-110 bg-blue-300 ease-in duration-300"><a
+                            class="w-1/2 text-white font-bold mr-10 bg-blue-600 rounded-lg px-4 py-2 hover:scale-110 bg-blue-500 ease-in duration-300"><a
                                 href="">Explore Sounds</a></button>
                         <button
                             class="w-1/2 text-white font-bold mr-10 border-solid border-2 border-white px-2 py-2 rounded-lg px-4 py-2 hover:scale-110 ease-in duration-300"><a
@@ -62,7 +68,8 @@
                     </div>
                 </div>
             </div>
-            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 mt-8"> <!-- conteneur de la flèche pour accéder au contenu inférieur -->
+            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10 mt-8">
+                <!-- conteneur de la flèche pour accéder au contenu inférieur -->
                 <img class="mx-auto w-8" src="img/arrow.png">
             </div>
         </div>
@@ -89,10 +96,50 @@
     </div>
     </div>
 
-    <footer>
-
+    <footer class="w-full bg-black">
+        <div class="flex mx-36 pt-12 pb-12">
+            <!-- Conteneur du logo -->
+            <div class="text-white w-1/6 border-r border-gray-500">
+                <h2 class="font-bold text-xl">APTHEPLUGG</h2>
+            </div>
+    
+            <!-- Conteneur du menu de footer -->
+            <div class="text-white grid grid-cols-3 w-2/6">
+                <div class="grid mx-8">
+                    <h3 class="font-semibold text-sm mb-4">Explore</h3>
+                    <a href="#Home" class="mb-2">Home</a>
+                    <a href="#Beats">Beats</a>
+                </div>
+                <div class="grid mx-8">
+                    <h3 class="font-semibold text-sm mb-4">Discover</h3>
+                    <a href="#Prices" class="mb-2">Prices</a>
+                    <a href="#AboutMe">About me</a>
+                </div>
+                <div class="grid mx-8">
+                    <h3 class="font-semibold text-sm mb-4">Contact</h3>
+                    <a href="#Contact" class="">Contact</a>
+                </div>
+            </div>
+    
+            <!-- Conteneur des réseaux sociaux à droite -->
+            <div class="text-white flex w-1/6 ml-auto">
+                <h3 class="font-semibold text-sm mb-2 mr-4">Follow Us</h3>
+                <a href="#" class="mr-4">
+                    <img src="img/youtube.png" alt="Youtube" class="w-6 h-6">
+                </a>
+                <a href="#" class="mr-4">
+                    <img src="img/instagram.png" alt="Instagram" class="w-6 h-6">
+                </a>
+                <a href="#">
+                    <img src="img/tiktok.png" alt="TikTok" class="w-6 h-6">
+                </a>
+            </div>
+        </div>
+    
+        <!-- Mention des droits d'auteur -->
+        <p class="text-xs text-white pb-4 mx-36 border-t border-gray-500 pt-4">© 2024 APTHEPLUGG. All Rights Reserved</p>
     </footer>
-
+    
 </body>
 
 </html>
