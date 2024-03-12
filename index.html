@@ -13,6 +13,9 @@
 </head>
 
 <body class="overflow-x-hidden">
+
+    <!-- HEADER -->
+
     <header class="bg-black w-full fixed z-50">
         <div class="flex py-4 justify-center items-center mx-36 "> <!-- conteneur du header -->
 
@@ -26,10 +29,13 @@
                     </li>
                     <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="#Beats">Beats</a>
                     </li>
-                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="">Prices</a></li>
-                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="">About me</a>
+                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a
+                            href="#Prices">Prices</a></li>
+                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="#AboutMe">About
+                            me</a>
                     </li>
-                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a href="">Contact</a></li>
+                    <li class="mr-10 text-neutral-400 hover:text-white ease-in duration-200"><a
+                            href="#Contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -42,6 +48,9 @@
             </div>
         </div>
     </header>
+
+    <!-- HERO HEADER -->
+
     <div class="bg-black w-full">
         <div class="flex-col">
             <!-- div conteneur pour appliquer un flex-col afin de mettre la flèche tout en dessous -->
@@ -74,7 +83,10 @@
             </div>
         </div>
     </div>
-    <div class="flex" id="Beats"> <!-- conteneur du hero -->
+
+    <!-- ABOUT ME -->
+
+    <div class="flex w-full h-screen" id="Beats"> <!-- conteneur du hero -->
         <div class="w-1/2 bg-blue-500 p-28"> <!-- côté droit -->
             <p class="text-[60px] font-bold text-white uppercase mb-2">Get Your Sound <br> To The Next Level</p>
             <p class="text-md text-white mb-8">Unleash the Rhythm Within: Elevate Your Beats, Ignite Your Sound.
@@ -96,31 +108,68 @@
     </div>
     </div>
 
+    <!-- CONTACT -->
+
+    <div class="w-full h-screen flex justify-center items-center" id="Contact">
+        <div class="">
+            <h2 class="text-3xl mb-8 font-bold">Contact</h2>
+
+            <form action="" method="post" class="">
+                <div class="flex flex-col mb-4 md:flex-row md:justify-between">
+                    <div class="md:w-1/2 md:mr-2">
+                        <label for="Name">Name:</label>
+                        <input type="text" id="Name" name="Name" required class="p-2 w-full border border-2">
+                    </div>
+    
+                    <div class="md:w-1/2 md:ml-2">
+                        <label for="Email">E-mail:</label>
+                        <input type="email" id="Email" name="Email" required class="p-2 w-full border border-2">
+                    </div>
+                </div>
+                <label for="Subject">Subject:</label>
+                <input type="text" id="Subject" name="Subject" required class="w-full mb-2 p-2 border border-2">
+
+                <label for="Message">Message:</label>
+                <textarea id="Message" name="Message" rows="4" required
+                    class="w-full mb-2 p-2 border border-2"></textarea>
+
+                <button type="submit" id="submit" name="submit"
+                    class="text-white mr-10 bg-blue-600 rounded-lg px-4 py-2 hover:bg-blue-500 ease-in duration-200">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
     <footer class="w-full bg-black">
         <div class="flex mx-36 pt-12 pb-12">
             <!-- Conteneur du logo -->
             <div class="text-white w-1/6 border-r border-gray-500">
                 <h2 class="font-bold text-xl">APTHEPLUGG</h2>
             </div>
-    
+
             <!-- Conteneur du menu de footer -->
             <div class="text-white grid grid-cols-3 w-2/6">
                 <div class="grid mx-8">
                     <h3 class="font-semibold text-sm mb-4">Explore</h3>
-                    <a href="#Home" class="mb-2">Home</a>
-                    <a href="#Beats">Beats</a>
+                    <a href="#Home" class="mb-2 text-neutral-400 text-sm hover:text-white ease-in duration-200">Home</a>
+                    <a href="#Beats" class="text-neutral-400 text-sm hover:text-white ease-in duration-200">Beats</a>
                 </div>
                 <div class="grid mx-8">
                     <h3 class="font-semibold text-sm mb-4">Discover</h3>
-                    <a href="#Prices" class="mb-2">Prices</a>
-                    <a href="#AboutMe">About me</a>
+                    <a href="#Prices"
+                        class="mb-2 text-neutral-400 text-sm hover:text-white ease-in duration-200">Prices</a>
+                    <a href="#AboutMe" class="text-neutral-400 text-sm hover:text-white ease-in duration-200">About
+                        me</a>
                 </div>
                 <div class="grid mx-8">
                     <h3 class="font-semibold text-sm mb-4">Contact</h3>
-                    <a href="#Contact" class="">Contact</a>
+                    <a href="#Contact"
+                        class="text-neutral-400 text-sm hover:text-white ease-in duration-200">Contact</a>
                 </div>
             </div>
-    
+
             <!-- Conteneur des réseaux sociaux à droite -->
             <div class="text-white flex w-1/6 ml-auto">
                 <h3 class="font-semibold text-sm mb-2 mr-4">Follow Us</h3>
@@ -135,11 +184,12 @@
                 </a>
             </div>
         </div>
-    
+
         <!-- Mention des droits d'auteur -->
-        <p class="text-xs text-white pb-4 mx-36 border-t border-gray-500 pt-4">© 2024 APTHEPLUGG. All Rights Reserved</p>
+        <p class="text-xs text-white pb-4 mx-36 border-t border-gray-500 pt-4">© 2024 APTHEPLUGG. All Rights Reserved
+        </p>
     </footer>
-    
+
 </body>
 
 </html>
