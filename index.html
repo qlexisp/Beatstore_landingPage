@@ -86,33 +86,34 @@
 
     <!-- ABOUT ME -->
 
-    <div class="flex w-full h-screen" id="Beats"> <!-- conteneur du hero -->
-        <div class="w-1/2 bg-blue-500 p-28"> <!-- côté droit -->
-            <p class="text-[60px] font-bold text-white uppercase mb-2">Get Your Sound <br> To The Next Level</p>
-            <p class="text-md text-white mb-8">Unleash the Rhythm Within: Elevate Your Beats, Ignite Your Sound.
-                Explore endless possibilities and craft your sonic signature with our cutting-edge beatmaking tools.
-            </p>
-            <div class="flex"> <!-- conteneur des boutons du hero -->
-                <button
-                    class="w-1/2 text-white font-bold mr-10 bg-blue-500 rounded-lg px-4 py-2 hover:scale-110 bg-blue-400 ease-in duration-300"><a
-                        href="">Explore Sounds</a></button>
-                <button
-                    class="w-1/2 text-white font-bold mr-10 border-solid border-2 border-white px-2 py-2 rounded-lg px-4 py-2 hover:scale-110 ease-in duration-300"><a
-                        href="">About Me</a></button>
+    <div class="flex w-full h-screen" id="AboutMe"> <!-- conteneur du hero -->
+        <div class="w-1/2 bg-black p-28 flex justify-center items-center"> <!-- côté droit -->
+            <div class="flex flex-col items-center text-center text-white">
+                <img src="img/aptheplugg.jpg" class="rounded-full w-64 h-64 mb-8">
+                <h2 class="text-2xl font-bold mb-2">About Me</h2>
+                <p class="text-neutral-400 font-['Raleway'] text-sm leading-6">Hey there! I'm aptheplugg, a beatmaker on a mission to transform sounds into unforgettable experiences. Let's craft something extraordinary together and make your music stand out.</p>
             </div>
         </div>
-
-        <div class="w-1/2 bg-blue-600 bg-scroll bg-cover" style="background-image: url('img/hero.jpg')">
+    
+        <div class="w-1/2 bg-blue-600 bg-scroll bg-cover flex justify-center items-center h-screen"
+            style="background-image: url('img/hero.jpg')">
             <!-- côté gauche -->
+            <div class="">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/1Hfvuak8IsW0DdtnDW90Xu?utm_source=generator&theme=0"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
         </div>
     </div>
-    </div>
+    
 
     <!-- CONTACT -->
 
     <div class="w-full h-screen flex justify-center items-center" id="Contact">
         <div class="">
-            <h2 class="text-3xl mb-8 font-bold">Contact</h2>
+            <h2 class="text-4xl mb-8 font-bold">Contact</h2>
 
             <form action="" method="post" class="">
                 <div class="flex flex-col mb-4 md:flex-row md:justify-between">
@@ -120,7 +121,7 @@
                         <label for="Name">Name:</label>
                         <input type="text" id="Name" name="Name" required class="p-2 w-full border border-2">
                     </div>
-    
+
                     <div class="md:w-1/2 md:ml-2">
                         <label for="Email">E-mail:</label>
                         <input type="email" id="Email" name="Email" required class="p-2 w-full border border-2">
@@ -145,7 +146,7 @@
     <footer class="w-full bg-black">
         <div class="flex mx-36 pt-12 pb-12">
             <!-- Conteneur du logo -->
-            <div class="text-white w-1/6 border-r border-gray-500">
+            <div class="text-white w-1/6">
                 <h2 class="font-bold text-xl">APTHEPLUGG</h2>
             </div>
 
